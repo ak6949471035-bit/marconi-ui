@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="el">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>RADIO MONITOR MARCONI</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+<header>
+  <h1>RADIO MONITOR MARCONI</h1>
+  <p class="sub">Melodia 99.2 vs Diesi 101.3</p>
+</header>
+
+<main>
+  <section class="card">
+    <div class="row">
+      <h2>Σταθμοί</h2>
+      <button id="btnRefresh">Refresh</button>
+    </div>
+    <pre id="out">Loading...</pre>
+  </section>
+
+  <section class="card">
+    <h2>Ρύθμιση API</h2>
+    <p class="sub">
+      Βάλε εδώ το Worker API URL σου
+    </p>
+
+    <div class="row">
+      <input id="apiUrl" placeholder="https://...workers.dev" />
+      <button id="btnSave">Save</button>
+    </div>
+
+    <p class="hint">Μετά πάτα Refresh.</p>
+  </section>
+</main>
+
+<script src="./app.js"></script>
+</body>
+</html>
