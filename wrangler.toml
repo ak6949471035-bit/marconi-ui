@@ -1,0 +1,18 @@
+name = "marconi-ui"
+main = "worker.js"
+compatibility_date = "2026-02-06"
+
+[vars]
+DIESI_API = "https://api.diesi.gr/playing-now/"
+MELODIA_HISTORY_URL = "https://onlineradiobox.com/gr/melodia/?cs=gr.melodia&played=1"
+
+# (προαιρετικό) πόσα δευτερόλεπτα να θεωρεί "ίδιο" event
+MIN_EVENT_GAP_SECONDS = "45"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "marconi_db"
+database_id = "PUT_YOUR_D1_DATABASE_ID_HERE"
+
+[triggers]
+crons = ["*/1 * * * *"]
